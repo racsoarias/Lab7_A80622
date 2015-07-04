@@ -76,31 +76,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ArbolBinario.h" />
     <ClInclude Include="DoublyLinkedList.h" />
-    <ClInclude Include="Elemento.h" />
-    <ClInclude Include="ElementoDouble.h" />
-    <ClInclude Include="ElementoInt.h" />
-    <ClInclude Include="ElementoIntInt.h" />
-    <ClInclude Include="ElementoPersona.h" />
-    <ClInclude Include="Lista.h" />
+    <ClInclude Include="Iterador.h" />
+    <ClInclude Include="IteradorInverso.h" />
+    <ClInclude Include="Nodo.h" />
     <ClInclude Include="Persona.h" />
-    <ClInclude Include="Pila.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArbolBinario.cpp" />
-    <ClCompile Include="Elemento.cpp" />
-    <ClCompile Include="ElementoDouble.cpp" />
-    <ClCompile Include="ElementoInt.cpp" />
-    <ClCompile Include="ElementoIntInt.cpp" />
-    <ClCompile Include="ElementoPersona.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Persona.cpp" />
-    <ClCompile Include="Pila.cpp" />
-    <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

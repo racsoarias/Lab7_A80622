@@ -2,18 +2,26 @@
 
 using namespace std;
 
-class Persona{
+class Persona {
 
-protected:
-	int id;
+	friend ostream & operator<<(ostream &, Persona &);
+
+	template <class T>
+	friend class Nodo;
+
+private:
 	string nombre;
+	int id;
+	Persona();
 
 public:
-	Persona(int, string);
-	virtual ~Persona();
-	int getID();
-	string getNombre();	
-	void setID(int);
-	void setNombre(string);
+	Persona(string, int);
+	~Persona();
+
+	bool operator<(Persona &);
+	bool operator>(Persona &);
+
 };
+
+ostream & operator<<(ostream &, Persona &);
 

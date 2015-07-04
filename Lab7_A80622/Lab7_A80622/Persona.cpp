@@ -1,22 +1,26 @@
 #include "stdafx.h"
 #include "Persona.h"
 
-Persona::Persona(int id, string nombre){
-	this->id = id;
+Persona::Persona() {
+}
+
+Persona::Persona(string nombre, int id){
 	this->nombre = nombre;
+	this->id = id;
 }
 
 Persona::~Persona(){
 }
-int Persona::getID(){
-	return this->id;
+
+ostream & operator<<(ostream & out, Persona & p) {
+	return out << p.nombre;
 }
-string Persona::getNombre(){
-	return this->nombre;
+
+bool Persona::operator<(Persona & otra) {
+	return this->nombre.compare(otra.nombre) < 0;
 }
-void Persona::setID(int id){
-	this->id = id;
+
+bool Persona::operator>(Persona & otra) {
+	return this->nombre.compare(otra.nombre) > 0;
 }
-void Persona::setNombre(string nombre){
-	this->nombre = nombre;
-}
+
