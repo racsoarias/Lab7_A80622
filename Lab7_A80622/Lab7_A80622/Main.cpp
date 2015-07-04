@@ -35,7 +35,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	b.removeAnyPos(4);
 	cout << "Lista modificada:\n" << b << endl;
 
-
 	DoublyLinkedList<char> c;
 	for (int i = 0; i < 5; i++){
 		c.addFirst(i + 97);
@@ -48,7 +47,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	c.removeLast();
 	c.removeAnyPos(4);
 	cout << "Lista modificada:\n" << c << endl;
-	
 
 	DoublyLinkedList<Persona> d;
 	Persona p1("Andy", 1000);
@@ -58,7 +56,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	Persona p5("Joha", 3000);
 	Persona p6("Cora", 3000);
 	Persona p7("Zara", 3000);
-
 	d.addFirst(p2); 
 	d.addFirst(p6);
 	d.addFirst(p7);
@@ -66,7 +63,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	d.addAnyPos(p3,2);
 	d.addLast(p4);
 	d.addAnyPos(p5,0);
-
 	cout << "\nLista Original:\n" << d << endl;
 
 	d.removeFirst();
@@ -74,6 +70,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	d.removeAnyPos(3);
 	cout << "Lista modificada:\n" << d << endl; 
 
+	//Iteradores
 	imprimir(a);
 	imprimir(b);
 	imprimir(c);
